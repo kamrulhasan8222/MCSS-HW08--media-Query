@@ -1,0 +1,170 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* Site css */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    font-size: 15px;
+}
+
+span {
+    color: #888;
+}
+
+.weather-forcast {
+    padding: 20px;
+    ;
+}
+
+@media screen and (min-width:800px) {
+    .weather-forcast {
+        margin: 10px;
+        box-shadow: 0px 0px 10px gray;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .weather-forcast {
+        width: 1000px;
+    }
+}
+
+.location-date h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: blod;
+    padding: 10px 0;
+}
+
+.location-date h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 5px 0;
+}
+
+.weather-today-summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.weather-today,
+.weather-summary {
+    flex-basis: 50%;
+}
+
+.weather-today {
+    display: flex;
+}
+
+.weather-today h6 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px 20px;
+    width: 80%;
+}
+
+.weather-today span {
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.weather-summary h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.weather-summary h3 {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.weather-one-day {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #cac5c5d0;
+    padding: 10px 0;
+    align-items: center;
+}
+
+@media screen and (min-width:800px) {
+    .weather-seven-day {
+        display: flex;
+    }
+    .weather-one-day {
+        flex-direction: column;
+        flex-basis: 20%;
+        border: none;
+    }
+}
+
+.weather-one-day:last-child {
+    border-bottom: 1px solid #cac5c5d0;
+}
+
+@media screen and (min-width:800px) {
+    .weather-one-day:last-child {
+        border-bottom: 0;
+    }
+}
+
+.weather-one-day h2 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    flex-basis: 25%;
+}
+
+@media screen and (min-width:800px) {
+    .weather-one-day h2 {
+        padding-bottom: 10px;
+    }
+}
+
+.weather-one-day h3 {
+    display: flex;
+    font-size: 15px;
+    flex-basis: 15%;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+@media screen and (max-width:600px) {
+    .weather-one-day h3 {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.weather-one-day h3 span,
+.weather-one-day h5 span {
+    font-weight: bold;
+}
+
+.weather-one-day h5 {
+    font-size: 15px;
+    font-weight: bold;
+    flex-basis: 20%;
+}
+
+@media screen and (max-width:500px) {
+    .weather-one-day h5 span {
+        display: block;
+        text-align: center;
+    }
+    .weather-one-day h5 {
+        display: block;
+        text-align: center;
+    }
+}
